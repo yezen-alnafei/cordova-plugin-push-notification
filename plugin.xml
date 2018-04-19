@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-push-notification-token" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>CordovaPushNotificationPlugin</name>
+    <engines>
+    <engine name="cordova" version=">=3.4.0" />
+  </engines>
+  <asset src="www/PushNotificationToken.js" target="js/PushNotificationToken.js" />
+  <asset src="www/PushNotificationToken.js.map" target="js/PushNotificationToken.js.map" />
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="CordovaPushNotificationPlugin">
+        <param name="ios-package" value="CordovaPushNotificationPlugin" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/PNCordovaCallback.swift" />
+    <source-file src="src/ios/PNSDKPlugin.swift" />
+    <source-file src="src/ios/PNSDKCordovaSample-Bridging-Header.h" />
+  </platform>
+</plugin>

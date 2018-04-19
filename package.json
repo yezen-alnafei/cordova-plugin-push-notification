@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-push-notification-token",
+  "version": "1.0.0",
+  "description": "Example Cordova plugin for iOS to support blog post.  The native part of the plugin is written in Swift rather than Objective-C.  This has been updated to use Swift 3 / XCode 8.2 / Cordova 6.4.",
+  "main": "www/PushNotificationToken.js",
+  "types": "www/PushNotificationToken.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-push-notification-token",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yezen Alnafei",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yezen-alnafei/cordova-plugin-pn.git"
+  },
+  "devDependencies": {
+    "@types/cordova": "0.0.34",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "@angular/core": "^4.4.4",
+    "@types/cordova": "0.0.34",
+    "cordova": "^7.0.1"
+  }
+}
