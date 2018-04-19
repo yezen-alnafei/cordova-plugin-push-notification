@@ -19,7 +19,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yezen-alnafei/cordova-plugin-pn.git"
+    "url": "https://github.com/yezen-alnafei/cordova-plugin-push-notification.git"
   },
   "devDependencies": {
     "@types/cordova": "0.0.34",
